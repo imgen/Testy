@@ -85,7 +85,8 @@ file class InvoiceDocument : IDocument
                 });
             });
 
-            row.ConstantItem(100).Height(50).Placeholder();
+            // TODO: Find a good image
+            //row.ConstantItem(100).Height(50).Placeholder();
         });
     }
 
