@@ -1,0 +1,44 @@
+Date,Hours,Work
+2023/8/2,4,"Anylaze requirements, refactoring existing code"
+2023/8/3,9,"Fix ExportExcel bug, start implementing vertical
+expansion of cell blocks"
+2023/8/4,9,"Address issues in the PR for ExportExcel image processing bug, also continue working on vertical expansion of cell blocks"
+2023/8/5,8,Finish first working version of vertical expansion of cell blocks
+2023/8/6,2,Refactoring the code and tests
+2023/8/7,9,"Add two PRs for better handling of Export Excel
+Rework the resource pool form calculation PR
+Continue working on the tests of vertical expansion of cell blocks"
+2023/8/8,7,"Try to make DV-1731 PR's integration tests work on Mac
+Refactoring JavascriptIntegrationTests.cs
+Continue working on the tests of vertical expansion of cell blocks"
+2023/8/9,8,"Investigate PDF Signing issue
+Fix place holder image too big issue
+Think about throttling of service bus messages"
+2023/8/10,8,"Discuss, implement and test service bus message throttling"
+2023/8/11,2,Continue to test and improving service bus message throttling
+2023/8/12,3,Continue to test and improving service bus message throttling
+2023/8/13,5,"Discuss DV-1731 - Improve Form Calculation's performance
+Continue working on vertical expansion of cell blocks and adding tests"
+2023/8/14,7,"Discuss DV-2322 - Implement throttling with service bus functions with Paul and incorporate his input. And fix a DI bug.
+Add more tests for Excel Export"
+2023/8/15,7,"Try out IronXL, IronPDF and Syncfusion PDF
+Meet with Tee for an hour to discuss vertical expansion
+Write tests to cover Tee's requirement"
+2023/8/16,9,"Try out Aspose PDF, also a failure. Asked for support in their forum
+Contact Syncfusion for PDF signing issues
+Use template name as a way to config expand direction
+Investigate the WriteConflict issue in chat's last seen api"
+2023/8/17,5,"Try out self-signed certificate with IronPdf, a success
+Investigate the WriteConflict issue in chat's last seen api by trying to replicate the issue locally, so far unable to do so"
+2023/8/18,9,Make Syncfusion PDF work with Azure after failing to make Iron PDF working
+2023/8/19,2,"Polish Syncfusion PDF code.
+Fix the DV-1731 causing deadletter issue
+Communicate with Syncfusion and IronPDF regarding Azure KeyVault certificate support"
+2023/8/20,2,"Compare the size difference between IronPDF and Syncfusion
+Try IronPdf with Azure Key Vault again"
+2023/8/21,6,"Get IronPdf to work with Azure Key Vault and time stamp url
+Try to abstract common logic between ImportExcel and ImportData
+Go through old tasks"
+2023/8/22,6,"Use IronPDF to sign PDF instead of secure black box
+Investigate the issue of Failed to load resource: net::ERR_FILE_NOT_FOUND - DV-2394
+Continue investigating the WriteConflict error on chat api - DV-2366"
