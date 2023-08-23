@@ -85,8 +85,8 @@ file class InvoiceDocument : IDocument
                 });
             });
 
-            var image = Image.FromFile("Topo-Logo.png");
-            row.ConstantItem(100).Height(50).Image(image);
+            var topoLogoImage = Image.FromFile("Topo-Logo.png");
+            row.ConstantItem(100).Height(50).Image(topoLogoImage);
         });
     }
 
