@@ -106,7 +106,9 @@ file class InvoiceDocument : IDocument
             column.Item().Element(ComposeTable);
 
             var totalHours = Model.WorkItems.Sum(x => x.Hours);
-            column.Item().AlignRight().Text($"Total hours: {totalHours}").FontSize(14);
+            const int hourlyRate = 400;
+            var totalAmountToBePaid = totalHours * hourlyRate;
+            column.Item().AlignRight().Text($"Total hours: {totalHours}. Total amount to be paid: {totalAmountToBePaid} HKD").FontSize(14);
         });
     }
 

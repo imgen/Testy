@@ -42,3 +42,7 @@ Go through old tasks"
 2023/8/22,6,"Use IronPDF to sign PDF instead of secure black box
 Investigate the issue of Failed to load resource: net::ERR_FILE_NOT_FOUND - DV-2394
 Continue investigating the WriteConflict error on chat api - DV-2366"
+2023/8/23,6,"Replicated the WriteConflict error locally
+Coordinate with Paul for a fix of the WriteConflict error"
+2023/8/24,7,"Stop browser console logging to fix the Failed to load resource: net::ERR_FILE_NOT_FOUND issue
+Fix of the WriteConflict error"
