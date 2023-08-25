@@ -46,3 +46,4 @@ Continue investigating the WriteConflict error on chat api - DV-2366"
 Coordinate with Paul for a fix of the WriteConflict error"
 2023/8/24,7,"Stop browser console logging to fix the Failed to load resource: net::ERR_FILE_NOT_FOUND issue
 Fix of the WriteConflict error"
+2023/8/25,7,Investigate SUP-184 - [RFE] Inconsistent DB Export
