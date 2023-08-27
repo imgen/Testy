@@ -187,4 +187,5 @@ file record Address(string CompanyName, string Street, string City, string State
 
 file record Invoice(int Number, DateTime IssueDate, DateTime DueDate, Address From, Address For, WorkItem[] WorkItems);
 
+// ReSharper disable once ClassNeverInstantiated.Local
 file record WorkItem(DateTime Date, int Hours, string Work);
