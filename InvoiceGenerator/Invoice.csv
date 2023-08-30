@@ -47,3 +47,7 @@ Coordinate with Paul for a fix of the WriteConflict error"
 2023/8/24,7,"Stop browser console logging to fix the Failed to load resource: net::ERR_FILE_NOT_FOUND issue
 Fix of the WriteConflict error"
 2023/8/25,7,Investigate SUP-184 - [RFE] Inconsistent DB Export
+2023/8/28,6,"Refactor PR 1233 for DV-1534 together with Paul
+Refactor PR 1219 for DV-2322 to make it work with legacy service bus message function"
+2023/8/29,4,"Improve existing PRs
+Continue to polish PR 1242 for DV-2322"
