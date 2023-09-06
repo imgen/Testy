@@ -8,11 +8,11 @@ using System.Diagnostics;
 using var reader = new StreamReader("Invoice.csv");
 using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
 var workItems = csv.GetRecords<WorkItem>().ToArray();
-
+var today = DateTime.Today;
 var invoice = new Invoice(
     1,
-    DateTime.Parse("2023/09/01"),
-    DateTime.Parse("2023/09/10"),
+    DateTime.Parse($"{today.Year}/{today.Month}/01"),
+    DateTime.Parse($"{today.Year}/{today.Month}/10"),
     new Address("Hailin Shu",
         "JinShanSi Village, GuangPing town, NingQiang county",
         "HanZhong city",
