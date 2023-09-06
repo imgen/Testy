@@ -28,7 +28,7 @@ var invoice = new Invoice(
     workItems
 );
 QuestPDF.Settings.License = LicenseType.Community;
-const string pdfFilePath = "Invoice.pdf";
+const string pdfFilePath = @"F:\Work\Topo\Invoice.pdf";
 var document = new InvoiceDocument(invoice);
 document.GeneratePdf(pdfFilePath);
 Process.Start("explorer.exe", pdfFilePath);
@@ -84,9 +84,6 @@ file class InvoiceDocument : IDocument
                     text.Span($"{Model.DueDate:d}");
                 });
             });
-
-            var topoLogoImage = Image.FromFile("Topo-Logo.png");
-            row.ConstantItem(100).Height(50).Image(topoLogoImage);
         });
     }
 

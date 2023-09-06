@@ -50,4 +50,9 @@ Fix of the WriteConflict error"
 2023/8/28,6,"Refactor PR 1233 for DV-1534 together with Paul
 Refactor PR 1219 for DV-2322 to make it work with legacy service bus message function"
 2023/8/29,4,"Improve existing PRs
-Continue to polish PR 1242 for DV-2322"
+Continue to polish PR 1242 for DV-2322 "
+2023/8/30,1,"Improve tests of DV-2348
+Slack communication regarding vertical cell block expansion and DV-1731 with Stanley"
+2023/8/31,4,"Some more investigation of DV-2366
+Meet with Tee to discuss vertical expansion
+Look into CEFSharp"
