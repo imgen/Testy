@@ -8,11 +8,11 @@ using System.Diagnostics;
 using var reader = new StreamReader("Invoice.csv");
 using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
 var workItems = csv.GetRecords<WorkItem>().ToArray();
-var today = DateTime.Today;
+var today = DateOnly.FromDateTime(DateTime.Today);
 var invoice = new Invoice(
     1,
-    DateTime.Parse($"{today.Year}/{today.Month}/01"),
-    DateTime.Parse($"{today.Year}/{today.Month}/10"),
+    DateOnly.Parse($"{today.Year}/{today.Month}/01"),
+    DateOnly.Parse($"{today.Year}/{today.Month}/10"),
     new Address("Hailin Shu",
         "JinShanSi Village, GuangPing town, NingQiang county",
         "HanZhong city",
@@ -75,13 +75,13 @@ file class InvoiceDocument : IDocument
                 column.Item().Text(text =>
                 {
                     text.Span("Issue date: ").SemiBold();
-                    text.Span($"{Model.IssueDate:d}");
+                    text.Span($"{Model.IssueDate:yyyy/MM/dd}");
                 });
 
                 column.Item().Text(text =>
                 {
                     text.Span("Due date: ").SemiBold();
-                    text.Span($"{Model.DueDate:d}");
+                    text.Span($"{Model.DueDate:yyyy/MM/dd}");
                 });
             });
         });
@@ -182,7 +182,7 @@ file class AddressComponent : IComponent
 
 file record Address(string CompanyName, string Street, string City, string State, string Email, string Phone);
 
-file record Invoice(int Number, DateTime IssueDate, DateTime DueDate, Address From, Address For, WorkItem[] WorkItems);
+file record Invoice(int Number, DateOnly IssueDate, DateOnly DueDate, Address From, Address For, WorkItem[] WorkItems);
 
 // ReSharper disable once ClassNeverInstantiated.Local
 file record WorkItem(DateTime Date, int Hours, string Work);
