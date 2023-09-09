@@ -3,7 +3,6 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using System.Threading;
 using IronPdf;
-using IronPdf.Signing;
 
 namespace Funky
 {
