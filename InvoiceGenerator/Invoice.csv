@@ -1,58 +1,19 @@
 Date,Hours,Work
-2023/8/2,4,"Anylaze requirements, refactoring existing code"
-2023/8/3,9,"Fix ExportExcel bug, start implementing vertical
-expansion of cell blocks"
-2023/8/4,9,"Address issues in the PR for ExportExcel image processing bug, also continue working on vertical expansion of cell blocks"
-2023/8/5,8,Finish first working version of vertical expansion of cell blocks
-2023/8/6,2,Refactoring the code and tests
-2023/8/7,9,"Add two PRs for better handling of Export Excel
-Rework the resource pool form calculation PR
-Continue working on the tests of vertical expansion of cell blocks"
-2023/8/8,7,"Try to make DV-1731 PR's integration tests work on Mac
-Refactoring JavascriptIntegrationTests.cs
-Continue working on the tests of vertical expansion of cell blocks"
-2023/8/9,8,"Investigate PDF Signing issue
-Fix place holder image too big issue
-Think about throttling of service bus messages"
-2023/8/10,8,"Discuss, implement and test service bus message throttling"
-2023/8/11,2,Continue to test and improving service bus message throttling
-2023/8/12,3,Continue to test and improving service bus message throttling
-2023/8/13,5,"Discuss DV-1731 - Improve Form Calculation's performance
-Continue working on vertical expansion of cell blocks and adding tests"
-2023/8/14,7,"Discuss DV-2322 - Implement throttling with service bus functions with Paul and incorporate his input. And fix a DI bug.
-Add more tests for Excel Export"
-2023/8/15,7,"Try out IronXL, IronPDF and Syncfusion PDF
-Meet with Tee for an hour to discuss vertical expansion
-Write tests to cover Tee's requirement"
-2023/8/16,9,"Try out Aspose PDF, also a failure. Asked for support in their forum
-Contact Syncfusion for PDF signing issues
-Use template name as a way to config expand direction
-Investigate the WriteConflict issue in chat's last seen api"
-2023/8/17,5,"Try out self-signed certificate with IronPdf, a success
-Investigate the WriteConflict issue in chat's last seen api by trying to replicate the issue locally, so far unable to do so"
-2023/8/18,9,Make Syncfusion PDF work with Azure after failing to make Iron PDF working
-2023/8/19,2,"Polish Syncfusion PDF code.
-Fix the DV-1731 causing deadletter issue
-Communicate with Syncfusion and IronPDF regarding Azure KeyVault certificate support"
-2023/8/20,2,"Compare the size difference between IronPDF and Syncfusion
-Try IronPdf with Azure Key Vault again"
-2023/8/21,6,"Get IronPdf to work with Azure Key Vault and time stamp url
-Try to abstract common logic between ImportExcel and ImportData
-Go through old tasks"
-2023/8/22,6,"Use IronPDF to sign PDF instead of secure black box
-Investigate the issue of Failed to load resource: net::ERR_FILE_NOT_FOUND - DV-2394
-Continue investigating the WriteConflict error on chat api - DV-2366"
-2023/8/23,6,"Replicated the WriteConflict error locally
-Coordinate with Paul for a fix of the WriteConflict error"
-2023/8/24,7,"Stop browser console logging to fix the Failed to load resource: net::ERR_FILE_NOT_FOUND issue
-Fix of the WriteConflict error"
-2023/8/25,7,Investigate SUP-184 - [RFE] Inconsistent DB Export
-2023/8/28,6,"Refactor PR 1233 for DV-1534 together with Paul
-Refactor PR 1219 for DV-2322 to make it work with legacy service bus message function"
-2023/8/29,4,"Improve existing PRs
-Continue to polish PR 1242 for DV-2322 "
-2023/8/30,1,"Improve tests of DV-2348
-Slack communication regarding vertical cell block expansion and DV-1731 with Stanley"
-2023/8/31,4,"Some more investigation of DV-2366
-Meet with Tee to discuss vertical expansion
-Look into CEFSharp"
+2023/9/1,4,"Study and analyze the requirement of table like cell block, coming up a design
+Conduct testing of vertical cell block expansion"
+2023/9/4,4,Test vertical cell block expansion against Odoo template
+2023/9/5,1,"Slack communication with Tee on excel export
+Try to look into the slowness of ImportData"
+2023/9/6,5,Implement and test DV-2446 - Add start / finish logging
+2023/9/7,1,Test DV-2348 - Use IronPDF to sign PDF
+2023/9/11,3,"Improve DV-2446 with generics and then tested working
+Add JIRA description in response of Max's request
+Address Max's comments on 4 of my PRs
+Resolve merge conflict with dev"
+2023/9/12,1,"Continue to address Max's comments on my PRs
+Resolve merge conflicts with dev"
+2023/9/13,2,"Communicate with Paul regarding DV-2446
+Re-implement and re-test DV-2446 - Add start / finish loggig"
+2023/9/21,1,"Upgrade IronPdf to latest version and retest
+Rebase DV-2348 and DV-2322"
+2023/9/26,1,Help Garima testing DV-1532

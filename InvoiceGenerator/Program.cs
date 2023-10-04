@@ -9,8 +9,11 @@ using var reader = new StreamReader("Invoice.csv");
 using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
 var workItems = csv.GetRecords<WorkItem>().ToArray();
 var today = DateOnly.FromDateTime(DateTime.Today);
+#pragma warning disable S6580 // Use a format provider when parsing date and time
+var invoiceNumber = (int)((DateTime.Today - DateTime.Parse("2023/08/01")).TotalDays / 30);
+#pragma warning restore S6580 // Use a format provider when parsing date and time
 var invoice = new Invoice(
-    1,
+    invoiceNumber,
     DateOnly.Parse($"{today.Year}/{today.Month}/01"),
     DateOnly.Parse($"{today.Year}/{today.Month}/10"),
     new Address("Hailin Shu",
