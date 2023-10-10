@@ -8,7 +8,8 @@ using System.Diagnostics;
 using var reader = new StreamReader("Invoice.csv");
 using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
 var workItems = csv.GetRecords<WorkItem>().ToArray();
-var today = DateOnly.FromDateTime(DateTime.Today);
+var dateTimeToday = DateTime.Today;
+var today = DateOnly.FromDateTime(dateTimeToday);
 #pragma warning disable S6580 // Use a format provider when parsing date and time
 var invoiceNumber = (int)((DateTime.Today - DateTime.Parse("2023/08/01")).TotalDays / 30);
 #pragma warning restore S6580 // Use a format provider when parsing date and time
@@ -31,7 +32,8 @@ var invoice = new Invoice(
     workItems
 );
 QuestPDF.Settings.License = LicenseType.Community;
-const string pdfFilePath = @"F:\Work\Topo\Invoice.pdf";
+var yearMonth = dateTimeToday.ToString("Y", CultureInfo.InvariantCulture);
+var pdfFilePath = @$"F:\Work\Topo\Invoice of {yearMonth}.pdf";
 var document = new InvoiceDocument(invoice);
 document.GeneratePdf(pdfFilePath);
 Process.Start("explorer.exe", pdfFilePath);
