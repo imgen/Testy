@@ -12,11 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Invoice.pdf">
+    <None Update="AATL2.pfx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="SelfSignedCert.pfx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Update="Invoice.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
