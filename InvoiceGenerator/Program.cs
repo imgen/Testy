@@ -33,7 +33,7 @@ var invoice = new Invoice(
 );
 QuestPDF.Settings.License = LicenseType.Community;
 var yearMonth = dateTimeToday.ToString("Y", CultureInfo.InvariantCulture);
-var pdfFilePath = @$"F:\Work\Topo\Invoice of {yearMonth}.pdf";
+var pdfFilePath = @$"C:\Work\Topo\Invoice of {yearMonth}.pdf";
 var document = new InvoiceDocument(invoice);
 document.GeneratePdf(pdfFilePath);
 Process.Start("explorer.exe", pdfFilePath);

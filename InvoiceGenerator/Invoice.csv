@@ -1,19 +1,15 @@
 Date,Hours,Work
-2023/9/1,4,"Study and analyze the requirement of table like cell block, coming up a design
-Conduct testing of vertical cell block expansion"
-2023/9/4,4,Test vertical cell block expansion against Odoo template
-2023/9/5,1,"Slack communication with Tee on excel export
-Try to look into the slowness of ImportData"
-2023/9/6,5,Implement and test DV-2446 - Add start / finish logging
-2023/9/7,1,Test DV-2348 - Use IronPDF to sign PDF
-2023/9/11,3,"Improve DV-2446 with generics and then tested working
-Add JIRA description in response of Max's request
-Address Max's comments on 4 of my PRs
-Resolve merge conflict with dev"
-2023/9/12,1,"Continue to address Max's comments on my PRs
-Resolve merge conflicts with dev"
-2023/9/13,2,"Communicate with Paul regarding DV-2446
-Re-implement and re-test DV-2446 - Add start / finish loggig"
-2023/9/21,1,"Upgrade IronPdf to latest version and retest
-Rebase DV-2348 and DV-2322"
-2023/9/26,1,Help Garima testing DV-1532
+2023/10/6,1,Security training and installing of Drata Agent
+2023/10/9,4,DV-2348 - Use Iron PDF to replace SecureBlackBox. Implement caching of certificate and remove hardcoded license key
+2023/10/10,7,"DV-2563 - Using IronXL to replace EPPlus in Excel Export.
+DV-2348 - Try to reduce the deployment size of Iron PDF"
+2023/10/11,10,"DV-2563 - Using IronXL to replace EPPlus in Excel Export.
+DV-2348 - Try to reduce the deployment size of Iron PDF"
+2023/10/12,8,"DV-2563 - Try to get the excel export integration tests pass
+DV-2348 - Try to contact Iron to get IronPDF working"
+2023/10/13,7,"DV-2563 - Make everything work with IronXL
+DV-2348 - Try to contact Iron to get IronPDF working. Also try out Paul's Iron PDF POC to see if it works. "
+2023/10/15,1,Try out Syncfusion's Excel library
+2023/10/19,5,"Reproduce the issue with Iron PDF locally
+Make Syncfusion successfully sign PDF"
+2023/10/19,2,DV-2615 - Upgrade SecureBlackBox to latest version and test
