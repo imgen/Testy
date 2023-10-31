@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Syncfusion.XlsIO.Net.Core" Version="23.1.42" />
+    <PackageReference Include="Syncfusion.XlsIO.Net.Core" Version="23.1.43" />
   </ItemGroup>
 
   <ItemGroup>
