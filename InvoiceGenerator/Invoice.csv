@@ -12,4 +12,4 @@ DV-2348 - Try to contact Iron to get IronPDF working. Also try out Paul's Iron P
 2023/10/15,1,Try out Syncfusion's Excel library
 2023/10/19,5,"Reproduce the issue with Iron PDF locally
 Make Syncfusion successfully sign PDF"
-2023/10/19,2,DV-2615 - Upgrade SecureBlackBox to latest version and test
+2023/10/25,2,DV-2615 - Upgrade SecureBlackBox to latest version and test
