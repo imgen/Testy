@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="IronPdf" Version="2023.8.6" />
+    <PackageReference Include="IronPdf" Version="2023.11.8" />
   </ItemGroup>
 
   <ItemGroup>
