@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Runtime.InteropServices;
 using Syncfusion.Licensing;
 using Syncfusion.Pdf.Parsing;
 using Syncfusion.Pdf.Security;
@@ -15,7 +16,10 @@ var pdfSignature = new PdfSignature(pdfDoc, pdfDoc.Pages[0], pdfCertificate, "To
         TimeStampServer = new TimeStampServer(new Uri("http://aatl-timestamp.globalsign.com/tsa/v4v5effk07zor410rew22z"))
 };
 
+var desktopDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 var signedPdfFilePath = Path.Combine(Environment.CurrentDirectory, "Invoice_signed.pdf");
 pdfDoc.Save(new FileStream(signedPdfFilePath, FileMode.Create));
-Process.Start("explorer.exe", signedPdfFilePath);
 
+
+if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+    Process.Start("explorer.exe", signedPdfFilePath);
