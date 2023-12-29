@@ -1,9 +1,11 @@
 Date,Hours,Work
-2023/11/14,2,DV-2348 - Test the new version of Iron PDF
-2023/11/15,2,"DV-2348 - Test the new version of Iron PDF. Communicate with the Iron team. 
-Setup a Mac machine and test on it."
-2023/11/16,1,DV-2348 - Communicate with Iron team regarding the PDF signature
-2023/11/17,1,DV-2348 - Communicate with Iron team regarding the PDF signature
-2023/11/28,1,DV-2348 - Testing new version of Iron PDF
-2023/11/30,2,"DV-2348 - Merge dev branch, fix conflicts, update integration tests a little bit
-DV-2563 - Upgrade IronXL package, fix one last unit test error"
+2023/12/4,1,"DV-2348 - Merge dev branch, make sure CI pass
+DV-2563 - Merge dev branch, fix a typo in appsettings.json
+Communicate with Max regarding Data View export"
+2023/12/5,1,DV-2563 - Make all Excel Export tests runnable on Mac
+2023/12/7,1,DV-2348 - Verify the changes made in team review
+2023/12/17,1,DV-2348 - Merge dev into DV-2348 and fix the issue that the Portable.BouncyCastle package got removed during merge
+2023/12/26,2,"DV-2348 - Fix the issue that the Portable.BouncyCastle package got removed during merge again
+DV-2348 - Investigate the possibility of making DV-2348 work under Mac with Apple Silicon"
+2023/12/27,3,"DV-2348 - Make the integration test pass on Mac
+DV-2348 - Investigate the bug of Azure Function not working on Mac and file bug to Iron team"

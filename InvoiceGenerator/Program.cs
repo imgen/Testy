@@ -33,10 +33,14 @@ var invoice = new Invoice(
 );
 QuestPDF.Settings.License = LicenseType.Community;
 var yearMonth = dateTimeToday.AddDays(-20).ToString("Y", CultureInfo.InvariantCulture);
-var pdfFilePath = @$"C:\Work\Topo\Invoice of {yearMonth}.pdf";
+var fileName = $"Invoice of {yearMonth}.pdf";
+var pdfFilePath = Path.Combine(Environment.CurrentDirectory, fileName);
 var document = new InvoiceDocument(invoice);
 document.GeneratePdf(pdfFilePath);
-Process.Start("explorer.exe", pdfFilePath);
+new Process { StartInfo = new ProcessStartInfo(pdfFilePath) { UseShellExecute = true } }.Start();
+var desktopDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+var destinationPath = Path.Combine(desktopDir, fileName);
+File.Copy(pdfFilePath, destinationPath);
 
 file class InvoiceDocument : IDocument
 {
