@@ -396,3 +396,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+.idea/.idea.Testy/.idea/sonarlint/issuestore/c/c/cc6c232ea294e0852fe8818daf71d173ac6f9979
+.idea/.idea.Testy/.idea/sonarlint/issuestore/d/9/d9902d2a0bea55c5c1697dcc0d18a8520cbd2130
+.idea/.idea.Testy/.idea/sonarlint/securityhotspotstore/c/c/cc6c232ea294e0852fe8818daf71d173ac6f9979
+.idea/.idea.Testy/.idea/sonarlint/securityhotspotstore/d/9/d9902d2a0bea55c5c1697dcc0d18a8520cbd2130
