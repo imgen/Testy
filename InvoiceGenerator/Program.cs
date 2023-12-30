@@ -42,7 +42,7 @@ var desktopDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 var destinationPath = Path.Combine(desktopDir, fileName);
 File.Copy(pdfFilePath, destinationPath);
 
-file class InvoiceDocument : IDocument
+file sealed class InvoiceDocument : IDocument
 {
     private Invoice Model { get; }
 
@@ -160,7 +160,7 @@ file class InvoiceDocument : IDocument
 }
 
 
-file class AddressComponent : IComponent
+file sealed class AddressComponent : IComponent
 {
     private string Title { get; }
     private Address Address { get; }
@@ -189,9 +189,9 @@ file class AddressComponent : IComponent
 }
 
 
-file record Address(string CompanyName, string Street, string City, string State, string Email, string Phone);
+file sealed record Address(string CompanyName, string Street, string City, string State, string Email, string Phone);
 
-file record Invoice(int Number, DateOnly IssueDate, DateOnly DueDate, Address From, Address For, WorkItem[] WorkItems);
+file sealed record Invoice(int Number, DateOnly IssueDate, DateOnly DueDate, Address From, Address For, WorkItem[] WorkItems);
 
 // ReSharper disable once ClassNeverInstantiated.Local
-file record WorkItem(DateTime Date, int Hours, string Work);
+file sealed record WorkItem(DateTime Date, int Hours, string Work);
