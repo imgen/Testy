@@ -38,6 +38,7 @@ var pdfFilePath = Path.Combine(Environment.CurrentDirectory, fileName);
 var document = new InvoiceDocument(invoice);
 document.GeneratePdf(pdfFilePath);
 new Process { StartInfo = new ProcessStartInfo(pdfFilePath) { UseShellExecute = true } }.Start();
+await Task.Delay(TimeSpan.FromSeconds(2));
 var desktopDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 var destinationPath = Path.Combine(desktopDir, fileName);
 File.Copy(pdfFilePath, destinationPath, overwrite: true);
