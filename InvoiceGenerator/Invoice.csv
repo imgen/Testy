@@ -5,7 +5,7 @@ Communicate with Max regarding Data View export"
 2023/12/5,1,DV-2563 - Make all Excel Export tests runnable on Mac
 2023/12/7,1,DV-2348 - Verify the changes made in team review
 2023/12/17,1,DV-2348 - Merge dev into DV-2348 and fix the issue that the Portable.BouncyCastle package got removed during merge
-2023/12/26,2,"DV-2348 - Fix the issue that the Portable.BouncyCastle package got removed during merge again
+2023/12/26,1,"DV-2348 - Fix the issue that the Portable.BouncyCastle package got removed during merge again
 DV-2348 - Investigate the possibility of making DV-2348 work under Mac with Apple Silicon"
 2023/12/27,3,"DV-2348 - Make the integration test pass on Mac
 DV-2348 - Investigate the bug of Azure Function not working on Mac and file bug to Iron team"

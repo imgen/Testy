@@ -40,7 +40,7 @@ document.GeneratePdf(pdfFilePath);
 new Process { StartInfo = new ProcessStartInfo(pdfFilePath) { UseShellExecute = true } }.Start();
 var desktopDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 var destinationPath = Path.Combine(desktopDir, fileName);
-File.Copy(pdfFilePath, destinationPath);
+File.Copy(pdfFilePath, destinationPath, overwrite: true);
 
 file sealed class InvoiceDocument : IDocument
 {
