@@ -1,4 +1,5 @@
 ﻿using CsvHelper;
+using QuestPDF;
 using QuestPDF.Fluent;
 using QuestPDF.Infrastructure;
 using System.Globalization;
@@ -15,8 +16,8 @@ var invoiceNumber = (int)((DateTime.Today - DateTime.Parse("2023/08/01")).TotalD
 #pragma warning restore S6580 // Use a format provider when parsing date and time
 var invoice = new Invoice(
     invoiceNumber,
-    DateOnly.Parse($"{today.Year}/{today.Month}/01"),
-    DateOnly.Parse($"{today.Year}/{today.Month}/10"),
+    DateOnly.Parse($"{today.Year}/{today.Month}/01", CultureInfo.InvariantCulture),
+    DateOnly.Parse($"{today.Year}/{today.Month}/10", CultureInfo.InvariantCulture),
     new Address("Hailin Shu",
         "JinShanSi Village, GuangPing town, NingQiang county",
         "HanZhong city",
@@ -31,7 +32,7 @@ var invoice = new Invoice(
         "+852 3018 8089"),
     workItems
 );
-QuestPDF.Settings.License = LicenseType.Community;
+Settings.License = LicenseType.Community;
 var yearMonth = dateTimeToday.AddDays(-20).ToString("Y", CultureInfo.InvariantCulture);
 var fileName = $"Invoice of {yearMonth}.pdf";
 var pdfFilePath = Path.Combine(Environment.CurrentDirectory, fileName);
