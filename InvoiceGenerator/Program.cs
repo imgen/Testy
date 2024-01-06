@@ -45,11 +45,9 @@ var desktopDir = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 var destinationPath = Path.Combine(desktopDir, fileName);
 File.Copy(pdfFilePath, destinationPath, overwrite: true);
 
-file sealed class InvoiceDocument : IDocument
+file sealed class InvoiceDocument(Invoice model) : IDocument
 {
-    private Invoice Model { get; }
-
-    public InvoiceDocument(Invoice model) => Model = model;
+    private Invoice Model { get; } = model;
 
     public DocumentMetadata GetMetadata() => DocumentMetadata.Default;
     public DocumentSettings GetSettings() => DocumentSettings.Default;
@@ -163,16 +161,10 @@ file sealed class InvoiceDocument : IDocument
 }
 
 
-file sealed class AddressComponent : IComponent
+file sealed class AddressComponent(string title, Address address) : IComponent
 {
-    private string Title { get; }
-    private Address Address { get; }
-
-    public AddressComponent(string title, Address address)
-    {
-        Title = title;
-        Address = address;
-    }
+    private string Title { get; } = title;
+    private Address Address { get; } = address;
 
     public void Compose(IContainer container)
     {
