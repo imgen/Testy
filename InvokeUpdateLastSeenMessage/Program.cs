@@ -5,7 +5,7 @@ Parallel.For(1, 200, _ =>
 {
     var httpClient = new HttpClient();
     var task = httpClient.GetAsync(
-            "https://localhost:5001/chat/channels/b8f42bfd-7f50-4ed1-bdd0-50f734b986af/messages/8ceb787e-ab5a-42ad-836b-34c3a5ac3c64/lastseen"
+            "https://localhost:5001/chat/channels/6bb78018-1af0-415b-a685-851dfc07e750/messages/fdc04abc-d513-4d93-bf55-8ac56de5795e/lastseen"
         );
     tasks.Add(task);
 });

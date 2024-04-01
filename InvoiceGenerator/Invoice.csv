@@ -1,11 +1,5 @@
 Date,Hours,Work
-2023/12/4,1,"DV-2348 - Merge dev branch, make sure CI pass
-DV-2563 - Merge dev branch, fix a typo in appsettings.json
-Communicate with Max regarding Data View export"
-2023/12/5,1,DV-2563 - Make all Excel Export tests runnable on Mac
-2023/12/7,1,DV-2348 - Verify the changes made in team review
-2023/12/17,1,DV-2348 - Merge dev into DV-2348 and fix the issue that the Portable.BouncyCastle package got removed during merge
-2023/12/26,1,"DV-2348 - Fix the issue that the Portable.BouncyCastle package got removed during merge again
-DV-2348 - Investigate the possibility of making DV-2348 work under Mac with Apple Silicon"
-2023/12/27,3,"DV-2348 - Make the integration test pass on Mac
-DV-2348 - Investigate the bug of Azure Function not working on Mac and file bug to Iron team"
+2024/3/23,2,"DV-3085 - Investigate the issue that PDF signer got extremely slow. 
+Compared the memory usage between the old version and the new version of SecureBlackBox by using Jetbrains dotMemory Unit, found out that the new verion's memory usage increased from 1.710515MB to 7.458328MB for a 6KB PDF file, that's a 436% increase. 
+For a relatively big 27.627MB PDF, the memory usage increased from 1.871752MB to 7.628747MB, a 407.6% increase"
+2024/3/31,1,DV-2366 - Verify that the issue is fixed in the latest version of backend and closed the issue
